@@ -1,0 +1,48 @@
+.scoreboard
+	{
+		margin: 50px auto;
+		width: 900px;
+		height: 350px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #808080;
+		box-sizing: border-box;
+		border: 3px solid #383838;
+		border-radius: 10px;
+	}
+
+.scoreboard div 
+	{
+		position: relative;
+		width: 240px;
+		height: 240px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 140px;
+		font-family: Arial, sans-serif;
+
+	}
+
+#hours::after 
+	{
+		content: ':';
+		font-family: serif;
+		position: absolute;
+		right: -50px;
+		top: 25px;
+	}
+
+#seconds::before 
+	{
+		content: ':';
+		font-family: serif;
+		position: absolute;
+		left: -50px;
+		top: 25px;
+	}
